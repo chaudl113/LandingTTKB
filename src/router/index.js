@@ -2,9 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 // import firebase from 'firebase'
 
-import Comics from '../components/Comics.vue'
-import Login from '../components/Login.vue'
-import SignUp from '../components/SignUp.vue'
+import Home from '../components/Home.vue'
+
 import NotFound from '../components/NotFound.vue'
 
 Vue.use(Router)
@@ -12,24 +11,10 @@ Vue.use(Router)
 const router = new Router({
   routes: [{
     path: '/',
-    redirect: '/comics'
+    component: Home,
+    meta: { title: 'Trang chủ || Truy tìm khoa báu' }
   },
-  {
-    path: '/login',
-    name: 'Login',
-    component: Login
-  },
-  {
-    path: '/signup',
-    name: 'SignUp',
-    component: SignUp
-  },
-  {
-    path: '/comics',
-    name: 'Comics',
-    component: Comics
 
-  },
   {
     path: '*',
     name: 'NotFound',
@@ -37,18 +22,5 @@ const router = new Router({
   }
   ]
 })
-
-// router.beforeEach((to, from, next) => {
-//   const currentUser = firebase.auth().currentUser
-//   const requiresAuth = to.matched.some((record) => record.meta.requiresAuth)
-
-//   if (requiresAuth && !currentUser) {
-//     next('login')
-//   } else if (!requiresAuth && currentUser) {
-//     next('comics')
-//   } else {
-//     next()
-//   }
-// })
 
 export default router
