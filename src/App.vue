@@ -18,7 +18,7 @@ export default {
 <style>
 html,
 body {
-  font-family: "Montserrat", arial, helvetica, sans-serif !important;
+  font-family:'Montserrat', sans-serif!important;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;

@@ -1,12 +1,44 @@
 <template>
   <section class="blocknews">
     <div class="island">
-      <img  src="../../assets/daodaulau.png" alt="" />
+      <img src="../../assets/daodaulau.png" alt="" />
     </div>
     <div class="inner-page clearfix container">
-      <h3 class="title">Tin tức <strong>MỚI nhất</strong></h3>
+      <h3 class="title">Tin tức MỚI nhất</h3>
 
       <div class="row ">
+        <div class="col-md-6 mt-5">
+          <div class="post-news">
+            <div class="thumb-img">
+              <a
+                href="https://lienquan.garena.vn/tin-tuc/nhan-mien-phi-florentinao-kiem-sy-olympic"
+                ><img
+                  src="https://lienquan.garena.vn/files/posts/0b8cda1a86647830211eee5df1c7b2206034dbf78e1fd.jpg"
+                  alt=""
+              /></a>
+            </div>
+
+            <div class="post-script">
+              <a class="link-post">ĐĂNG KÝ LẦN ĐẦU NHẬN 20 LƯỢT BẮN MIỄN PHÍ</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mt-5">
+          <div class="post-news">
+            <div class="thumb-img">
+              <a
+                href="https://lienquan.garena.vn/tin-tuc/nhan-mien-phi-florentinao-kiem-sy-olympic"
+                ><img
+                  src="https://lienquan.garena.vn/files/posts/0b8cda1a86647830211eee5df1c7b2206034dbf78e1fd.jpg"
+                  alt=""
+              /></a>
+            </div>
+
+            <div class="post-script">
+              <a class="link-post">CHƠI NGAY TRÚNG NGAY NHIỀU PHẦN THƯỞNG</a>
+            </div>
+          </div>
+        </div>
         <div class="col-md-6 mt-5">
           <div class="post-news">
             <div class="thumb-img">
@@ -60,24 +92,23 @@ export default {}
   img {
     width: 100%;
     padding-left: 20px;
-    width:200px; height:450px;
+    width: 200px;
+    height: 450px;
   }
-
 }
 @media only screen and (min-width: 2560px) {
- .island {
-  position: absolute;
-  height: 100%;
+  .island {
+    position: absolute;
+    height: 100%;
 
-  img {
-    width: 100%;
-    padding-left: 150px;
+    img {
+      width: 100%;
+      padding-left: 150px;
+    }
   }
-
-}
 }
 .inner-page.clearfix.container {
-    position: sticky;
+  position: sticky;
 }
 
 .post-news {

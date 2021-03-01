@@ -2,9 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 // import firebase from 'firebase'
 
-import Home from '../components/Home.vue'
+import Home from '../pages/Home.vue'
 
-import NotFound from '../components/NotFound.vue'
+import NotFound from '../pages/NotFound.vue'
 
 Vue.use(Router)
 
