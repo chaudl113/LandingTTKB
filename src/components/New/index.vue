@@ -132,7 +132,7 @@ export default {}
 .blocknews {
   background: url("../../assets/line.png") bottom center no-repeat;
   padding: 50px 0 100px 0;
-  background: #0d7cce;
+  background: #160e1e;
 }
 .post-news .post-script {
   position: absolute;

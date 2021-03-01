@@ -7,7 +7,7 @@
         <div class="bx-ios">
           <div class="bx-block">
             <div class="colleft">
-              Mua đạn
+             MUA ĐẠN
             </div>
             <div class="colright">
               <p>
@@ -19,9 +19,9 @@
                 - Mỗi lần mua đạn, khách hàng nhận thêm 20 viên đạn.
               </p>
             </div>
-            <div class="colright-3">
+            <div class="colright-3 ">
               <a href="sms://9639;?&body=MUA%DAN" class="btn btn-info"
-                >MUA NGAY</a
+                >MUA ĐẠN NGAY</a
               >
             </div>
           </div>
@@ -29,16 +29,20 @@
         <div class="bx-androi">
           <div class="bx-block">
             <div class="colleft">
-              iOS
+              NÂNG CẤP PHÁO
             </div>
-            <div class="colright">
-              <h2>Yêu cầu thiết bị</h2>
+          <div class="colright">
               <p>
-                Cấu hình iOS đề nghị:<br />
-                - iPhone 5S hoặc cao hơn<br />
-                - Phiên bản: iOS 8.0 hoặc cao hơn<br />
-                - Dung lượng bộ nhớ trống: 2GB hoặc nhiều hơn<br />
+                - Cú pháp:
+                <a href="sms://9639;?&body=MUA%DAN">MUA DAN gửi 9639</a><br />
+                - Giá cước: 3.000đ<br />
+                - Mỗi lần nâng cấp, đạn pháo được tăng lên 01 cấp về hỏa lực
               </p>
+            </div>
+            <div class="colright-3 ">
+              <a href="sms://9639;?&body=MUA%DAN" class="btn btn-info"
+                >NÂNG CẤP PHÁO NGAY</a
+              >
             </div>
           </div>
         </div>
@@ -55,11 +59,11 @@ export default {}
 .blockdown {
   background: url("../../assets/line.png") top center no-repeat;
   background-size: 100% auto;
-  padding: 20px 0 50px 0;
+  padding: 50px 0 100px 0;
   position: relative;
   color: #fff;
   margin-bottom: -50px;
-  background: #160e1e;
+  background: #162148;
   .inner-page {
     margin: 0 auto;
     position: relative;
@@ -103,23 +107,23 @@ export default {}
 
 .colright-3 {
   display: none;
-  float: left;
-  width: 20%;
-  padding: 15px;
-  border-left: 1px solid #ae903b;
-  min-height: 150px;
+  // float: left;
+  // width: 20%;
+  // padding: 15px;
+  // border-left: 1px solid #ae903b;
+  // min-height: 150px;
 
-  position: relative;
-  h2 {
-    text-transform: uppercase;
-    margin-bottom: 5px;
-    font-size: 16px;
-  }
-  a {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
+  // position: relative;
+  // h2 {
+  //   text-transform: uppercase;
+  //   margin-bottom: 5px;
+  //   font-size: 16px;
+  // }
+  // a {
+  //   position: absolute;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  // }
 }
 
 @media only screen and (min-width: 0px) and (max-width: 900px) {
@@ -139,11 +143,13 @@ export default {}
     text-align: center;
   }
   .colright-3 {
-    display: block;
+    display: flex;
+    justify-content:center;
     float: none;
     width: 100%;
     padding: 15px;
     border-top: 1px solid #ae903b;
+    min-height: 100px;
 
     position: relative;
     h2 {

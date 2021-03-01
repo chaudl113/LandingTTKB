@@ -5,20 +5,33 @@
         <div class="col-md-12">
           <section class="leaderboard-progress">
             <div class="contain text-center">
-              <img
+              <!-- <img
                 alt="Android Basics Leaderboard"
                 class="mb-2"
                 src="../../assets/img_rank.png"
-              />
-              <h2>Danh sách khách hàng trúng thưởng</h2>
+              /> -->
+              <h2 class="text-uppercase text-white title">
+                Danh sách trúng thưởng
+              </h2>
               <div class="ml-auto search-input">
-            <form id="content" class="mr-auto InputButton">
-              <input type="text" name="input" class="input" id="search-input" placeholder="Tìm kiếm" />
-              <button id="input-keyword-search" class="FloatingButton" type="submit"><i class="fa fa-search"></i></button>
-            </form>
-          </div>
+                <form id="content" class="mr-auto InputButton">
+                  <input
+                    type="text"
+                    name="input"
+                    class="input"
+                    id="search-input"
+                    placeholder="Tìm kiếm"
+                  />
+                  <button
+                    id="input-keyword-search"
+                    class="FloatingButton"
+                    type="submit"
+                  >
+                    <i class="fa fa-search"></i>
+                  </button>
+                </form>
+              </div>
             </div>
-
           </section>
 
           <div class="page-leaderboard">
@@ -1163,23 +1176,22 @@ export default {
 
 <style lang="scss" scoped>
 .ml-auto.search-input {
-    text-align: right;
+  text-align: right;
 
-::-webkit-input-placeholder { /* Edge */
-  color: red;
+  ::-webkit-input-placeholder {
+    /* Edge */
+    color: red;
+  }
 
-}
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: red;
+  }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: red;
-
-}
-
-::placeholder {
-  color: red;
-}
-  input{
-
+  ::placeholder {
+    color: red;
+  }
+  input {
     border-radius: 3px;
     border: solid 1px #efefef;
   }
@@ -1192,12 +1204,12 @@ export default {
     background: transparent;
     border: none;
     bottom: 23px;
-}
+  }
 }
 .InputButton {
-    font-size: 20px;
-    min-height: 50px;
-    position: relative;
+  font-size: 20px;
+  min-height: 50px;
+  position: relative;
 }
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
@@ -1206,14 +1218,13 @@ export default {
 #slider-top {
   margin-top: 77px;
   padding-top: 10px;
-  background-image: url("../../assets/Island.jpeg");
-  /* Full height */
-  height: 100%;
+  // background-image: url("../../assets/Island.jpeg");
+  // height: 100%;
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  background:#162148;
 }
 
 img,
@@ -1660,7 +1671,7 @@ svg {
 
 .page-leaderboard .ranking {
   clear: both;
-   margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .page-leaderboard .ranking .contain {
@@ -1989,5 +2000,14 @@ iframe#_hjRemoteVarsFrame {
   height: 1px !important;
   opacity: 0 !important;
   pointer-events: none !important;
+}
+
+.title {
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  line-height: 40px;
+  color: #cfc39b;
 }
 </style>
