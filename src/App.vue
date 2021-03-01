@@ -18,6 +18,18 @@ export default {
 <style>
 html,
 body {
-  font-family: "Titillium Web", sans-serif !important;
+  font-family: "Montserrat", arial, helvetica, sans-serif !important;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #fff;
+}
+
+img{
+    border: 0 none;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
 }
 </style>

@@ -1329,6 +1329,7 @@ input {
   overflow: hidden;
   backface-visibility: hidden;
   -webkit-transform-style: preserve-3d;
+  margin-bottom: 50px;
 }
 
 .contain {
@@ -1659,6 +1660,7 @@ svg {
 
 .page-leaderboard .ranking {
   clear: both;
+   margin-bottom: 50px;
 }
 
 .page-leaderboard .ranking .contain {
@@ -1682,7 +1684,6 @@ svg {
 @media (min-width: 33em) {
   .page-leaderboard .ranking .ranking-table-body {
     max-height: 15.125em;
-    margin-bottom: 55px;
   }
 }
 
