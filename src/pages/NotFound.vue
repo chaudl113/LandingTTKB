@@ -1,9 +1,8 @@
 <template>
-  <div class="not-found">
-    <img src="../assets/dc_logo.jpg" width="300px">
-    <h3>Wuh!?</h3>
-    <p>Looks like you are lost.</p>
-    <button v-on:click="notFound" class="button">Go Back To Login</button>
+  <div class="not-found text-center" style="padding-top:200px;">
+    <h1>404</h1>
+    <p> Page Not Found Error</p>
+    <button v-on:click="notFound" class="button">Trang chủ</button>
   </div>
 </template>
 

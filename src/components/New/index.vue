@@ -1,5 +1,5 @@
 <template>
-  <section class="blocknews">
+  <section id="tintuc" class="blocknews">
     <div class="island">
       <img src="../../assets/daodaulau.png" alt="" />
     </div>
@@ -11,9 +11,9 @@
           <div class="post-news">
             <div class="thumb-img">
               <a
-                href="https://lienquan.garena.vn/tin-tuc/nhan-mien-phi-florentinao-kiem-sy-olympic"
+                href="#"
                 ><img
-                  src="https://lienquan.garena.vn/files/posts/0b8cda1a86647830211eee5df1c7b2206034dbf78e1fd.jpg"
+                  src="../../assets/splash.png"
                   alt=""
               /></a>
             </div>
@@ -27,9 +27,9 @@
           <div class="post-news">
             <div class="thumb-img">
               <a
-                href="https://lienquan.garena.vn/tin-tuc/nhan-mien-phi-florentinao-kiem-sy-olympic"
+                href="#"
                 ><img
-                  src="https://lienquan.garena.vn/files/posts/0b8cda1a86647830211eee5df1c7b2206034dbf78e1fd.jpg"
+                  src="../../assets/splash.png"
                   alt=""
               /></a>
             </div>
@@ -43,9 +43,9 @@
           <div class="post-news">
             <div class="thumb-img">
               <a
-                href="https://lienquan.garena.vn/tin-tuc/nhan-mien-phi-florentinao-kiem-sy-olympic"
+                href="#"
                 ><img
-                  src="https://lienquan.garena.vn/files/posts/0b8cda1a86647830211eee5df1c7b2206034dbf78e1fd.jpg"
+                  src="../../assets/splash.png"
                   alt=""
               /></a>
             </div>
@@ -59,9 +59,9 @@
           <div class="post-news">
             <div class="thumb-img">
               <a
-                href="https://lienquan.garena.vn/tin-tuc/nhan-mien-phi-florentinao-kiem-sy-olympic"
+                href="#"
                 ><img
-                  src="https://lienquan.garena.vn/files/posts/0b8cda1a86647830211eee5df1c7b2206034dbf78e1fd.jpg"
+                  src="../../assets/splash.png"
                   alt=""
               /></a>
             </div>
@@ -117,6 +117,7 @@ export default {}
 }
 .thumb-img img {
   width: 100%;
+  height: 250px;
 }
 .listnews {
   padding: 0;
@@ -130,9 +131,11 @@ export default {}
   color: #cfc39b;
 }
 .blocknews {
-  background: url("../../assets/line.png") bottom center no-repeat;
+  background: url("../../assets/line.png") top center no-repeat;
+  background-size: 100% auto;
   padding: 50px 0 100px 0;
-  background: #160e1e;
+  position: relative;
+  color: #fff;
 }
 .post-news .post-script {
   position: absolute;

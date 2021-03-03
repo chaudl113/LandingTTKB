@@ -1,124 +1,149 @@
 <template>
-<div>
-   <span>
-        <div class="fixed-top  menu-m">
-          <ul>
-            <li class="">
-              <a href="https://lienquan.garena.vn">
-                <img
-                  src="https://lienquan.garena.vn/asset/images/icon-home.png"
-                  alt=""
-                />
-                <br />
-                Trang chủ
-              </a>
-            </li>
-            <li class="">
-              <a href="https://lienquan.garena.vn/tin-tuc">
-                <img
-                  src="https://lienquan.garena.vn/asset/images/icon-news.png"
-                  alt=""
-                />
-                <br />
-                Tin tức</a
-              >
-            </li>
+  <div>
+    <span>
+      <div class="fixed-top  menu-m">
+        <ul>
+          <li class="">
+            <router-link to="/" v-scroll-to="{ el:'#slider-top',offset: -100 }">
+              <div class="icon">
+                <i class="fa fa-home" aria-hidden="true"> </i>
+                <p>Trang chủ</p>
+              </div>
+            </router-link>
+          </li>
+          <li class="" v-scroll-to="{ el:'#tintuc',offset: -70 }">
+             <a href="#">
+              <div class="icon">
+                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                <p>Tin tức</p>
+              </div>
+            </a>
+          </li>
+          <li>
+                <a href="#"  v-scroll-to="{ el:'#huongdan',offset: -70 }">
+              <div class="icon">
+                <i class="fa fa-book" aria-hidden="true"></i>
 
-            <li>
-              <a href="https://colienquan.garena.vn/">
-                <img
-                  src="https://lienquan.garena.vn/asset/images/caothu.png"
-                  alt=""
-                />
-                <br />HƯỚNG DẪn</a
-              >
-            </li>
-            <li class="active">
-              <a href="https://lienquan.garena.vn/gioi-thieu">
-                <img
-                  src="https://lienquan.garena.vn/asset/images/icon-hv.png"
-                  alt=""
-                />
-                <br />
-                MÔ TẢ
-              </a>
-            </li>
-          </ul>
-        </div></span
-      >
-      <nav class="navbar navbar-expand-lg navbar-light  fixed-top text-uppercase ">
-    <div class="container">
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link menu-main-item-link " href="#">Trang chủ </a>
+                <p>Huớng dẫn</p>
+              </div>
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link menu-main-item-link " href="#">Rank</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled menu-main-item-link " href="#"
-              >Tin tức</a
-            >
-          </li>
-        </ul>
 
-        <div class="mx-auto">
-          <a href="#" class="navbar-brand"
-            ><img class="logo-image" src="../../assets/logo_login.png" alt=""
-          /></a>
-        </div>
-
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link menu-main-item-link " href="#">Khuyến mại </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link menu-main-item-link " href="#">Hướng dẫn</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled menu-main-item-link " href="#"
-              >Mô tả
+          <li class="">
+            <a href="#"  v-scroll-to="{ el:'#mota',offset: -60 }">
+              <div class="icon">
+               <i class="fa fa-university" aria-hidden="true"></i>
+                <p> Mô tả</p>
+              </div>
             </a>
           </li>
         </ul>
-      </div>
-    </div>
-  </nav></div>
+      </div></span
+    >
+    <nav
+      class="navbar navbar-expand-lg navbar-light  fixed-top text-uppercase "
+    >
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <router-link to="/" class="nav-link menu-main-item-link " href="#">Trang chủ </router-link>
+            </li>
+            <li class="nav-item" v-scroll-to="{ el:'#slider-top',offset: -100 }">
+              <a class="nav-link menu-main-item-link " href="#">Rank</a>
+            </li>
+            <li class="nav-item"  v-scroll-to="{ el:'#tintuc',offset: -180 }">
+              <a class="nav-link  menu-main-item-link " href="#"
+                >Tin tức</a
+              >
 
+            </li>
+          </ul>
+
+          <div class="mx-auto">
+            <a href="#" class="navbar-brand"
+              ><img class="logo-image" src="../../assets/logo_login.png" alt=""
+            /></a>
+          </div>
+
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item " v-scroll-to="'#slider-top'">
+              <a class="nav-link menu-main-item-link " href="#">Khuyến mại </a>
+            </li>
+            <li class="nav-item"   v-scroll-to="{ el:'#huongdan',offset: -180 }">
+              <a class="nav-link menu-main-item-link " href="#">Hướng dẫn</a>
+            </li>
+            <li class="nav-item" v-scroll-to="{ el:'#mota',offset: -170 }">
+              <a class="nav-link disabled menu-main-item-link " href="#"
+                >Mô tả
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'Header'
+}
 </script>
 
 <style lang="scss">
+.icon i {
+    font-size: 50px;
+    color: #fff;
+}
 .menu-m {
   display: none;
   background-color: #862600 !important;
   a {
     color: #fff671 !important;
-    font-size: 11px;
+    font-size: 18px;
     font-weight: 700;
     cursor: pointer;
     transition: color 0.2s ease-in-out;
     word-break: break-word;
+    p{
+    padding-top:5px;
+
+  }
   }
   ul {
     overflow: hidden;
     box-sizing: border-box;
     padding: 0;
-}
+  }
 }
 @media only screen and (min-width: 0px) and (max-width: 900px) {
   .menu-m {
     display: block;
     position: relative;
   }
-  .navbar{display:none!important}
+  .navbar {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 400px) {
+.menu-m {
+  a {
+    font-size: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+    word-break: break-word;
+  }
+  p{
+    padding-top:10px;
+
+  }
+
+}
 }
 .menu-m li.active {
-    background-color: #2a256c;
+  background-color: #2a256c;
 }
 .menu-m li a img {
   width: 40%;
@@ -126,9 +151,10 @@ export default {}
 }
 .menu-m li {
   width: 25%;
-  padding: 5px;
+      padding-top: 18px;
   text-align: center;
   float: left;
+  height: 110px;
 }
 
 .btdown {

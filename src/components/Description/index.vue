@@ -1,18 +1,19 @@
 <template>
-  <section class="blockdown">
+  <section id="mota" class="blockdown">
     <div class="inner-page ">
+      <h2 class="title">Mô tả Mini game</h2>
+
       <div class="img-in">
         <picture>
 
-          <img src="https://lienquan.garena.vn/asset/images/img-down.png" alt=""
+          <img src="../../assets/splash.png" alt=""
         /></picture>
       </div>
-      <h2 class="title">Mô tả Mini game</h2>
       <div class="info-device clearfix">
         <div class="bx-ios">
           <div class="bx-block">
           <div class="colright">
-              <h2>Yêu cầu thiết bị</h2>
+              <h2  >Yêu cầu thiết bị</h2>
               <p>
                 + Khách hàng truy cập wapsite <a href="http://ttkb.vn">http://ttkb.vn</a> để tham gia các
                 minigame của dịch vụ. <br/>
@@ -66,17 +67,16 @@ export default {}
   padding: 20px 0 50px 0;
   position: relative;
   color:#fff;
-  margin-bottom: -50px;
-  background: #160e1e;
   .inner-page {
     margin: 0 auto;
     position: relative;
     img {
     border: 0 none;
     height: auto;
-    width: 100%;
+    width: 40%;
     vertical-align: middle;
     height: auto;
+    padding-top: 50px;
 }
 }
 .title {
@@ -87,6 +87,7 @@ export default {}
     font-weight: bold;
     line-height: 40px;
     color: #cfc39b;
+        padding-top: 50px
 }
 .bx-block {
     border: 1px solid #ae903b;
@@ -103,6 +104,10 @@ export default {}
     font-size: 16px;
 }
 }
+}
+picture {
+    display: flex;
+    justify-content: center;
 }
 
 </style>

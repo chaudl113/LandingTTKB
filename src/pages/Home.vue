@@ -1,9 +1,9 @@
 <template>
   <div>
-    <Rank/>
-    <New/>
-    <Instruction/>
-    <Description/>
+    <Rank />
+    <New />
+    <Instruction />
+    <Description />
   </div>
 </template>
 

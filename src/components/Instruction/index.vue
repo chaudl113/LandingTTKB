@@ -1,5 +1,5 @@
 <template>
-  <section class="blockdown">
+  <section id="huongdan" class="blockdown">
     <div class="inner-page ">
       <h2 class="title">Hướng dẫn</h2>
 
@@ -7,12 +7,12 @@
         <div class="bx-ios">
           <div class="bx-block">
             <div class="colleft">
-             MUA ĐẠN
+              MUA ĐẠN
             </div>
             <div class="colright">
               <p>
                 - Cú pháp:
-                <a href="sms://9639;?&body=MUA%DAN">MUA DAN gửi 9639</a><br />
+                <a href="sms://9639;?&body=MUA%20DAN">MUA DAN gửi 9639</a><br />
                 - Giá cước: 3.000đ<br />
                 - Cước mua thêm đạn/ nâng cấp pháo sẽ được trừ khi khách hàng
                 gửi tin nhắn yêu cầu đến dịch vụ. <br />
@@ -20,7 +20,7 @@
               </p>
             </div>
             <div class="colright-3 ">
-              <a href="sms://9639;?&body=MUA%DAN" class="btn btn-info"
+              <a href="sms://9639;?&body=MUA%20DAN" class="btn btn-info"
                 >MUA ĐẠN NGAY</a
               >
             </div>
@@ -31,16 +31,16 @@
             <div class="colleft">
               NÂNG CẤP PHÁO
             </div>
-          <div class="colright">
+            <div class="colright">
               <p>
                 - Cú pháp:
-                <a href="sms://9639;?&body=MUA%DAN">MUA DAN gửi 9639</a><br />
+                <a href="sms:9639;?&body=MUA%20PHAO">MUA PHAO gửi 9639</a><br />
                 - Giá cước: 3.000đ<br />
                 - Mỗi lần nâng cấp, đạn pháo được tăng lên 01 cấp về hỏa lực
               </p>
             </div>
             <div class="colright-3 ">
-              <a href="sms://9639;?&body=MUA%DAN" class="btn btn-info"
+              <a href="sms:9639;?&body=MUA%20PHAO" class="btn btn-info"
                 >NÂNG CẤP PHÁO NGAY</a
               >
             </div>
@@ -62,8 +62,7 @@ export default {}
   padding: 50px 0 100px 0;
   position: relative;
   color: #fff;
-  margin-bottom: -50px;
-  background: #162148;
+  background-color: #162148;
   .inner-page {
     margin: 0 auto;
     position: relative;
@@ -144,7 +143,7 @@ export default {}
   }
   .colright-3 {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     float: none;
     width: 100%;
     padding: 15px;
