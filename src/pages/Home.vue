@@ -1,17 +1,20 @@
 <template>
   <div>
     <Rank />
-    <New />
     <Instruction />
     <Description />
+    <Minigame/>
+    <BXH />
+
   </div>
 </template>
 
 <script>
 import Rank from '../components/Rank/index.vue'
-import New from '../components/New/index.vue'
+import BXH from '../components/BXH/index.vue'
 import Description from '../components/Description/index.vue'
 import Instruction from '../components/Instruction/index.vue'
+import Minigame from '../components/Mimigame/index.vue'
 
 export default {
   name: 'Home',
@@ -20,9 +23,10 @@ export default {
   },
   components: {
     Rank,
-    New,
+    BXH,
     Description,
-    Instruction
+    Instruction,
+    Minigame
   }
 }
 </script>

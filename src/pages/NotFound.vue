@@ -1,38 +1,40 @@
 <template>
   <div class="not-found text-center" style="padding-top:200px;">
-    <h1>404</h1>
-    <p> Page Not Found Error</p>
-    <button v-on:click="notFound" class="button">Trang chủ</button>
+   <div class="hit-the-floor">404</div>
+   <h2 class="text-white">Xin Lỗi! Không tìm thấy trang</h2>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'login',
-  data: function () {
-    return {}
-  },
-  methods: {
-    notFound () {
-      this.$router.replace('/comics')
-    }
-  }
-}
+export default {}
 </script>
 
 <style scoped>
-.not-found {
-  margin-top: 40px;
+.hit-the-floor {
+  color: #fff;
+  font-size: 12em;
+  font-weight: bold;
+  font-family: Helvetica;
+  text-shadow:
+    0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
 }
-button {
-  margin: 10px 0;
-  background-color: #0476F2;
+
+.hit-the-floor {
+  text-align: center;
 }
-p {
-  margin-top: 40px;
-  font-size: 13px;
-}
-h3 {
-  font-weight: normal;
+
+body {
+  background-color: #f1f1f1;
 }
 </style>

@@ -11,11 +11,11 @@
               </div>
             </router-link>
           </li>
-          <li class="" v-scroll-to="{ el:'#tintuc',offset: -70 }">
+          <li class="" v-scroll-to="{ el:'#bxhminigame',offset:-150 }">
              <a href="#">
               <div class="icon">
-                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                <p>Tin tức</p>
+               <i class="fa fa-trophy" aria-hidden="true"></i>
+                <p>BXH MINIGAME</p>
               </div>
             </a>
           </li>
@@ -50,13 +50,10 @@
               <router-link to="/" class="nav-link menu-main-item-link " href="#">Trang chủ </router-link>
             </li>
             <li class="nav-item" v-scroll-to="{ el:'#slider-top',offset: -100 }">
-              <a class="nav-link menu-main-item-link " href="#">Rank</a>
+              <a class="nav-link menu-main-item-link " href="#">BXH</a>
             </li>
-            <li class="nav-item"  v-scroll-to="{ el:'#tintuc',offset: -180 }">
-              <a class="nav-link  menu-main-item-link " href="#"
-                >Tin tức</a
-              >
-
+              <li class="nav-item"   v-scroll-to="{ el:'#huongdan',offset: -180 }">
+              <a class="nav-link menu-main-item-link " href="#">Hướng dẫn</a>
             </li>
           </ul>
 
@@ -67,16 +64,16 @@
           </div>
 
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item " v-scroll-to="'#slider-top'">
-              <a class="nav-link menu-main-item-link " href="#">Khuyến mại </a>
-            </li>
-            <li class="nav-item"   v-scroll-to="{ el:'#huongdan',offset: -180 }">
-              <a class="nav-link menu-main-item-link " href="#">Hướng dẫn</a>
-            </li>
             <li class="nav-item" v-scroll-to="{ el:'#mota',offset: -170 }">
               <a class="nav-link disabled menu-main-item-link " href="#"
                 >Mô tả
               </a>
+            </li>
+             <li class="nav-item " v-scroll-to="{ el:'#minigame',offset: -180 }">
+              <a class="nav-link menu-main-item-link " href="#">MINIGAME </a>
+            </li>
+             <li class="nav-item " v-scroll-to="{ el:'#bxhminigame',offset: -200 }">
+              <a class="nav-link menu-main-item-link " href="#">BXH MINIGAME </a>
             </li>
           </ul>
         </div>
@@ -117,7 +114,7 @@ export default {
     padding: 0;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 900px) {
+@media only screen and (min-width: 0px) and (max-width: 990px) {
   .menu-m {
     display: block;
     position: relative;

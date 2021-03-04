@@ -1,26 +1,26 @@
 <template>
-  <div id="slider-top">
+  <div id="bxhminigame">
     <div class="container " style="margin-top: 2rem;">
       <div class="row">
         <div class="col-md-12">
           <section class="leaderboard-progress">
-            <div class="contain text-center">
-              <!-- <img
+            <div class=" contain text-center">
+              <img
                 alt="Android Basics Leaderboard"
                 class="mb-2"
                 src="../../assets/img_rank.png"
-              /> -->
+              />
               <h2 class="text-uppercase text-white title">
-                Danh sách trúng thưởng
+                Danh sách TOP GameMini
               </h2>
               <div class="ml-auto search-input">
                 <div id="content" class="mr-auto InputButton">
                   <input
                     type="text"
-                    v-model="searchQuery"
+                    v-model="searchBXHQuery"
                     name="input"
                     class="input"
-                    id="search-input"
+                    id="search-BXH"
                     placeholder="Tìm kiếm"
                   />
                   <button
@@ -47,30 +47,30 @@
             Phần thuởng
           </div>
         </div>
-        <div v-for="rank in evenNumbersTop" :key="rank.id"  class="ranking-table-row-leader-1">
+        <div v-for="BXH in BXHTop3" :key="BXH.id"  class="ranking-table-row-leader-1">
           <div class="ranking-table-data-leader-1">
             <div class="medal-gold">
-               <img v-bind:src="require('../../assets/rank_'+rank.stt+'.png')" alt="" />
+               <img v-bind:src="require('../../assets/rank_'+BXH.stt+'.png')" alt="" />
             </div>
           </div>
           <div class="ranking-table-data">
-            {{rank.sdt}}
+            {{BXH.sdt}}
           </div>
           <div class="ranking-table-data">
-            <div class="complete"> {{rank.phanthuong}}</div>
+            <div class="complete"> {{BXH.phanthuong}}</div>
           </div>
         </div>
 
  <div  class="ranking-table-body">
-          <div v-for="rank in evenNumbers" :key="rank.id" class="ranking-table-row">
+          <div v-for="BXH in evenNumbers" :key="BXH.id" class="ranking-table-row">
             <div class="ranking-table-data">
-              {{rank.stt}}
+              {{BXH.stt}}
             </div>
             <div class="ranking-table-data">
-              {{rank.sdt}}
+              {{BXH.sdt}}
             </div>
             <div class="ranking-table-data">
-              <div class="complete">{{rank.phanthuong}}</div>
+              <div class="complete">{{BXH.phanthuong}}</div>
             </div>
           </div>
 
@@ -89,33 +89,41 @@
 
 <script>
 export default {
-  name: 'Rank',
+  name: 'BXH',
   data () {
     return {
-      searchQuery: null
+      searchBXHQuery: null
     }
   },
   computed: {
-    rank () {
-      if (this.searchQuery) {
-        return this.$store.getters.ranks.filter((item) => {
-          return this.searchQuery.toLowerCase().split(' ').every(v => item.sdt.toLowerCase().includes(v))
+    BXH () {
+      if (this.searchBXHQuery) {
+        return this.$store.getters.BXH.filter((item) => {
+          return this.searchBXHQuery.toLowerCase().split(' ').every(v => item.sdt.toLowerCase().includes(v))
         })
       } else {
-        return this.$store.getters.ranks
+        return this.$store.getters.BXH
       }
     },
     evenNumbers () {
-      return this.rank.filter(number => number.stt > 3)
+      return this.BXH.filter(number => number.stt > 3)
     },
-    evenNumbersTop () {
-      return this.rank.filter(number => number.stt < 4)
+    BXHTop3 () {
+      return this.BXH.filter(number => number.stt < 4)
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
+
+.contain {
+    max-width: 73.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
 .ml-auto.search-input {
   text-align: right;
 
@@ -156,16 +164,13 @@ export default {
   box-shadow: inset 0 0 5px grey;
 }
 
-#slider-top {
-  margin-top: 77px;
-  padding-top: 10px;
-  // background-image: url("../../assets/Island.jpeg");
-  // height: 100%;
-
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  background: #162148;
+#bxhminigame {
+background: url(/img/line.57ef7554.png) top center no-repeat;
+    background-size: 100% auto;
+    padding: 20px 0 50px 0;
+    position: relative;
+    background-color: #162148;
+    color: #fff;
 }
 
 img,
