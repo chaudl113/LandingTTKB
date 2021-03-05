@@ -1,26 +1,40 @@
 <template>
   <div>
     <span>
-      <div class="fixed-top  menu-m">
+      <div class="fixed-top  menu-m nav-menuu-m">
+        <div class="img-icon-mobi">
+          <img src="../../assets/logo_login.png" alt="" />
+        </div>
+        <div class="play">
+          <a class="play-link" href="http://ttkb.vn/minigame/index.html" target="_blank">
+            <img src="../../assets/button_play.png" alt="">
+          </a
+          >
+        </div>
+      </div>
+      <div class="fixed-bottom  menu-m">
         <ul>
           <li class="">
-            <router-link to="/" v-scroll-to="{ el:'#slider-top',offset: -100 }">
+            <router-link
+              to="/"
+              v-scroll-to="{ el: '#slider-top', offset: -100 }"
+            >
               <div class="icon">
                 <i class="fa fa-home" aria-hidden="true"> </i>
                 <p>Trang chủ</p>
               </div>
             </router-link>
           </li>
-          <li class="" v-scroll-to="{ el:'#bxhminigame',offset:-150 }">
-             <a href="#">
+          <li class="" v-scroll-to="{ el: '#bxhminigame', offset: -150 }">
+            <a href="#">
               <div class="icon">
-               <i class="fa fa-trophy" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
                 <p>BXH MINIGAME</p>
               </div>
             </a>
           </li>
           <li>
-                <a href="#"  v-scroll-to="{ el:'#huongdan',offset: -70 }">
+            <a href="#" v-scroll-to="{ el: '#huongdan', offset: -70 }">
               <div class="icon">
                 <i class="fa fa-book" aria-hidden="true"></i>
 
@@ -30,16 +44,16 @@
           </li>
 
           <li class="">
-            <a href="#"  v-scroll-to="{ el:'#mota',offset: -60 }">
+            <a href="#" v-scroll-to="{ el: '#mota', offset: -60 }">
               <div class="icon">
-               <i class="fa fa-university" aria-hidden="true"></i>
-                <p> Mô tả</p>
+                <i class="fa fa-university" aria-hidden="true"></i>
+                <p>Mô tả</p>
               </div>
             </a>
           </li>
         </ul>
-      </div></span
-    >
+      </div>
+    </span>
     <nav
       class="navbar navbar-expand-lg navbar-light  fixed-top text-uppercase "
     >
@@ -47,12 +61,20 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-              <router-link to="/" class="nav-link menu-main-item-link " href="#">Trang chủ </router-link>
+              <router-link to="/" class="nav-link menu-main-item-link " href="#"
+                >Trang chủ
+              </router-link>
             </li>
-            <li class="nav-item" v-scroll-to="{ el:'#slider-top',offset: -100 }">
+            <li
+              class="nav-item"
+              v-scroll-to="{ el: '#slider-top', offset: -100 }"
+            >
               <a class="nav-link menu-main-item-link " href="#">BXH</a>
             </li>
-              <li class="nav-item"   v-scroll-to="{ el:'#huongdan',offset: -180 }">
+            <li
+              class="nav-item"
+              v-scroll-to="{ el: '#huongdan', offset: -180 }"
+            >
               <a class="nav-link menu-main-item-link " href="#">Hướng dẫn</a>
             </li>
           </ul>
@@ -64,16 +86,24 @@
           </div>
 
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item" v-scroll-to="{ el:'#mota',offset: -170 }">
+            <li class="nav-item" v-scroll-to="{ el: '#mota', offset: -170 }">
               <a class="nav-link disabled menu-main-item-link " href="#"
                 >Mô tả
               </a>
             </li>
-             <li class="nav-item " v-scroll-to="{ el:'#minigame',offset: -180 }">
+            <li
+              class="nav-item "
+              v-scroll-to="{ el: '#minigame', offset: -180 }"
+            >
               <a class="nav-link menu-main-item-link " href="#">MINIGAME </a>
             </li>
-             <li class="nav-item " v-scroll-to="{ el:'#bxhminigame',offset: -200 }">
-              <a class="nav-link menu-main-item-link " href="#">BXH MINIGAME </a>
+            <li
+              class="nav-item "
+              v-scroll-to="{ el: '#bxhminigame', offset: -200 }"
+            >
+              <a class="nav-link menu-main-item-link " href="#"
+                >BXH MINIGAME
+              </a>
             </li>
           </ul>
         </div>
@@ -89,24 +119,63 @@ export default {
 </script>
 
 <style lang="scss">
+.img-icon-mobi {
+  height: 100%;
+  width: 50%;
+    padding-top: 1%;
+    padding-left: 1%;
+  float:left;
+  position: absolute;
+    left: 8%;
+  img {
+    width: 50%;
+  }
+}
+.play{
+  float:right;
+  width: 50%;
+    padding: 3%;
+  .play-link{
+    width: 100%;
+
+   button.btn.btn-primary{
+      font-size:10px;
+    font-weight:900;
+     display:flex;
+  justify-content: center;
+   }
+  }
+
+}
+.nav-menuu-m {
+  background: url("../../assets/nv-m.png") top center no-repeat;
+  background-size: 100% 100%;
+  padding: 0px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: none !important;
+}
 .icon i {
-    font-size: 50px;
-    color: #fff;
+  font-size: 30px;
+  color: #fff;
 }
 .menu-m {
   display: none;
   background-color: #862600 !important;
   a {
     color: #fff671 !important;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 700;
     cursor: pointer;
     transition: color 0.2s ease-in-out;
     word-break: break-word;
-    p{
-    padding-top:5px;
-
-  }
+    p {
+      // padding-top:5px;
+    }
   }
   ul {
     overflow: hidden;
@@ -123,22 +192,21 @@ export default {
     display: none !important;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 400px) {
-.menu-m {
-  a {
-    font-size: 10px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: color 0.2s ease-in-out;
-    word-break: break-word;
+@media only screen and (min-width: 0px) and (max-width: 555px) {
+  .menu-m {
+    a {
+      font-size: 10px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: color 0.2s ease-in-out;
+      word-break: break-word;
+    }
+    p {
+      // padding-top:10px;
+    }
   }
-  p{
-    padding-top:10px;
-
-  }
-
 }
-}
+
 .menu-m li.active {
   background-color: #2a256c;
 }
@@ -148,10 +216,9 @@ export default {
 }
 .menu-m li {
   width: 25%;
-      padding-top: 18px;
+  padding-top: 10px;
   text-align: center;
   float: left;
-  height: 110px;
 }
 
 .btdown {

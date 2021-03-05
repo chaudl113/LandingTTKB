@@ -143,6 +143,18 @@ export default {}
     height: auto;
     padding-top: 50px;
 }
+
+@media only screen and (min-width: 0px) and (max-width: 990px) {
+ img {
+    border: 0 none;
+    height: auto;
+    width: 90%;
+    vertical-align: middle;
+    height: 480px;
+    padding-top: 0;
+}
+}
+
 }
 .title {
     font-size: 36px;

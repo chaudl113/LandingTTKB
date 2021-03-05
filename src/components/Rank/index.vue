@@ -11,9 +11,9 @@
                 src="../../assets/img_rank.png"
               /> -->
               <h2 class="text-uppercase text-white title">
-                Danh sách trúng thưởng
+                Danh sách TOP 10 trúng thưởng
               </h2>
-              <div class="ml-auto search-input">
+              <!-- <div class="ml-auto search-input">
                 <div id="content" class="mr-auto InputButton">
                   <input
                     type="text"
@@ -31,7 +31,7 @@
                     <i class="fa fa-search"></i>
                   </button>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
           <div class="page-leaderboard">
@@ -159,13 +159,19 @@ export default {
 #slider-top {
   margin-top: 77px;
   padding-top: 10px;
-  // background-image: url("../../assets/Island.jpeg");
-  // height: 100%;
-
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
   background: #162148;
+}
+@media screen and (max-width: 770px) {
+ #slider-top {
+  margin-top: 95px!important;
+
+}
+}
+@media screen and (max-width: 483px) {
+ #slider-top {
+  margin-top: 65px!important;
+
+}
 }
 
 img,
@@ -748,8 +754,8 @@ iframe#_hjRemoteVarsFrame {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 0.875em;
-  padding-bottom: 0.875em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
   background-color: #fff;
   box-shadow: 0 0 0.75em 0 rgba(46, 60, 73, 0.12);
   margin-bottom: 1.25em;
@@ -786,25 +792,32 @@ iframe#_hjRemoteVarsFrame {
   .ranking-table-row-leader-3
   .ranking-table-data-leader-3
   .medal-bronze {
-  margin-top: -1.313em;
-  height: 2.875em;
-  width: 2.875em;
+  // margin-top: -1.313em;
+  // height: 2.875em;
+  // width: 2.875em;
+  height: 100%;
+
 }
 
 @media (min-width: 33em) {
-  .ranking .ranking-table-row-leader-1 .ranking-table-data-leader-1 .medal-gold,
-  .ranking
-    .ranking-table-row-leader-2
-    .ranking-table-data-leader-2
-    .medal-silver,
-  .ranking
-    .ranking-table-row-leader-3
-    .ranking-table-data-leader-3
-    .medal-bronze {
-    margin-top: -1.563em;
-    height: 3.875em;
-    width: 3.875em;
-  }
+  // .ranking .ranking-table-row-leader-1 .ranking-table-data-leader-1 .medal-gold,
+  // .ranking
+  //   .ranking-table-row-leader-2
+  //   .ranking-table-data-leader-2
+  //   .medal-silver,
+  // .ranking
+  //   .ranking-table-row-leader-3
+  //   .ranking-table-data-leader-3
+  //   .medal-bronze {
+  //   margin-top: -1.563em;
+  //   height: 3.875em;
+  //   width: 3.875em;
+  // }
+  .medal-gold img {
+  // padding-top: 20px;
+  // margin-left: 15px;
+  width: 45px!important;
+}
 }
 
 .ranking .ranking-table-row-leader-1 {
@@ -812,9 +825,9 @@ iframe#_hjRemoteVarsFrame {
 }
 
 .medal-gold img {
-  padding-top: 20px;
-  margin-left: 15px;
-  width: 30px;
+  // padding-top: 20px;
+  // margin-left: 15px;
+  width: 25px;
 }
 .ranking .ranking-table-row-leader-2 {
   border: solid 0.125em #dbe2e8;
