@@ -133,8 +133,8 @@ export default {
 }
 .play{
   float:right;
-  width: 50%;
-    padding: 3%;
+  width: 44%;
+    padding: 6%;
   .play-link{
     width: 100%;
 

@@ -826,22 +826,30 @@ iframe#_hjRemoteVarsFrame {
   //   // margin-left: 15px;
   //   width:30px !important;
   // }
-  span.medal-gold,.medal-gold  {
+  span.medal-gold  {
     padding: 0.5rem;
   }
+  div.medal-gold  {
+    padding: 0.3rem;
+  }
+    .complete {
+    padding-right: 9%;
+}
+}
+    span.medal-gold  {
+    padding: 0.5rem;
+  }
+div.medal-gold   {
+    padding: 0.3rem;
+  }
+  .complete {
+    padding-right: 0%;
 }
 
-.ranking .ranking-table-row-leader-1 {
-   border-top:  solid 0.1em #3d3b2f;
-   border-left:  solid 0.1em #3d3b2f;
-   border-right:  solid 0.1em #3d3b2f;
+// .ranking .ranking-table-row-leader-1:last-child {
+//    border-bottom:  solid 0.08em #2e2e2d;
 
-}
-
-.ranking .ranking-table-row-leader-1:last-child {
-   border-bottom:  solid 0.125em #3d3b2f;
-
-}
+// }
 
 .medal-gold img {
   // padding-top: 20px;
