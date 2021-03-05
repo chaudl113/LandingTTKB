@@ -4,14 +4,14 @@
       <div class="row">
         <div class="col-md-12">
           <section class="leaderboard-progress">
-            <div class=" contain text-center">
-              <img
+            <div class="contain text-center">
+              <!-- <img
                 alt="Android Basics Leaderboard"
                 class="mb-2"
                 src="../../assets/img_rank.png"
-              />
+              /> -->
               <h2 class="text-uppercase text-white title">
-                Danh sách TOP 10 GameMini
+                 Danh sách TOP 10 GameMini
               </h2>
               <!-- <div class="ml-auto search-input">
                 <div id="content" class="mr-auto InputButton">
@@ -20,7 +20,7 @@
                     v-model="searchBXHQuery"
                     name="input"
                     class="input"
-                    id="search-BXH"
+                    id="search-input"
                     placeholder="Tìm kiếm"
                   />
                   <button
@@ -38,47 +38,60 @@
             <div style="display: none;"></div>
             <div id="contain-all" class=" slideout-panel">
               <section class="ranking">
-    <div class="contain">
-      <div class="ranking-table">
-        <div class="ranking-table-header-row">
-          <div class="ranking-table-header-data h6">Rank</div>
-          <div class="ranking-table-header-data h6">Thuê bao</div>
-          <div class="ranking-table-header-data h6">
-            Phần thuởng
-          </div>
-        </div>
-        <div v-for="BXH in BXHTop3" :key="BXH.id"  class="ranking-table-row-leader-1">
-          <div class="ranking-table-data-leader-1">
-            <div class="medal-gold">
-               <img v-bind:src="require('../../assets/rank_'+BXH.stt+'.png')" alt="" />
-            </div>
-          </div>
-          <div class="ranking-table-data">
-            {{BXH.sdt}}
-          </div>
-          <div class="ranking-table-data">
-            <div class="complete"> {{BXH.phanthuong}}</div>
-          </div>
-        </div>
-
- <div  class="ranking-table-body">
-          <div v-for="BXH in evenNumbers" :key="BXH.id" class="ranking-table-row">
-            <div class="ranking-table-data">
-              {{BXH.stt}}
-            </div>
-            <div class="ranking-table-data">
-              {{BXH.sdt}}
-            </div>
-            <div class="ranking-table-data">
-              <div class="complete">{{BXH.phanthuong}}</div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <!--Use Date Formatter-->
-    </div>
-  </section>
+                <div class="contain">
+                  <div class="ranking-table">
+                    <div class="ranking-table-header-row">
+                      <div class="ranking-table-header-data h6">Rank</div>
+                      <div class="ranking-table-header-data h6">Thuê bao</div>
+                      <div class="ranking-table-header-data h6">
+                        Phần thuởng
+                      </div>
+                    </div>
+                    <div
+                      v-for="BXH in BXH"
+                      :key="BXH.id"
+                      class="ranking-table-row-leader-1"
+                    >
+                      <div class="ranking-table-data-leader-1">
+                        <div v-if="BXH.stt<4" class="medal-gold">
+                          <img
+                            v-bind:src="
+                              require('../../assets/rank_' + BXH.stt + '.png')
+                            "
+                            alt=""
+                          />
+                        </div>
+                        <span class="medal-gold" v-else >{{BXH.stt }}</span>
+                      </div>
+                      <div class="ranking-table-data">
+                        {{ BXH.sdt }}
+                      </div>
+                      <div class="ranking-table-data">
+                        <div class="complete">{{ BXH.phanthuong }}</div>
+                      </div>
+                    </div>
+<!--
+                    <div class="ranking-table-body">
+                      <div
+                        v-for="rank in evenNumbers"
+                        :key="rank.id"
+                        class="ranking-table-row"
+                      >
+                        <div class="ranking-table-data">
+                          {{ rank.stt }}
+                        </div>
+                        <div class="ranking-table-data">
+                          {{ rank.sdt }}
+                        </div>
+                        <div class="ranking-table-data">
+                          <div class="complete">{{ rank.phanthuong }}</div>
+                        </div>
+                      </div>
+                    </div> -->
+                  </div>
+                  <!--Use Date Formatter-->
+                </div>
+              </section>
             </div>
           </div>
         </div>
@@ -156,16 +169,22 @@ export default {
   box-shadow: inset 0 0 5px grey;
 }
 
-#slider-top {
-  margin-top: 77px;
-  padding-top: 10px;
-  // background-image: url("../../assets/Island.jpeg");
-  // height: 100%;
-
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  background: #162148;
+#bxhminigame {
+    background: url("../../assets/line.png") top center no-repeat;
+  background-size: 100% auto;
+  padding: 20px 0 50px 0;
+  position: relative;
+  background-color: #162148;
+}
+@media screen and (max-width: 770px) {
+  #slider-top {
+    margin-top: 95px !important;
+  }
+}
+@media screen and (max-width: 483px) {
+  #slider-top {
+    margin-top: 65px !important;
+  }
 }
 
 img,
@@ -748,11 +767,7 @@ iframe#_hjRemoteVarsFrame {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 0.4em;
-  padding-bottom: 0.4em;
   background-color: #fff;
-  box-shadow: 0 0 0.75em 0 rgba(46, 60, 73, 0.12);
-  margin-bottom: 1.25em;
 }
 
 @media (min-width: 33em) {
@@ -790,7 +805,6 @@ iframe#_hjRemoteVarsFrame {
   // height: 2.875em;
   // width: 2.875em;
   height: 100%;
-
 }
 
 @media (min-width: 33em) {
@@ -807,15 +821,26 @@ iframe#_hjRemoteVarsFrame {
   //   height: 3.875em;
   //   width: 3.875em;
   // }
-  .medal-gold img {
-  // padding-top: 20px;
-  // margin-left: 15px;
-  width: 45px!important;
-}
+  // .medal-gold img {
+  //   // padding-top: 20px;
+  //   // margin-left: 15px;
+  //   width:30px !important;
+  // }
+  span.medal-gold,.medal-gold  {
+    padding: 0.5rem;
+  }
 }
 
 .ranking .ranking-table-row-leader-1 {
-  border: solid 0.125em #ecc81a;
+   border-top:  solid 0.1em #3d3b2f;
+   border-left:  solid 0.1em #3d3b2f;
+   border-right:  solid 0.1em #3d3b2f;
+
+}
+
+.ranking .ranking-table-row-leader-1:last-child {
+   border-bottom:  solid 0.125em #3d3b2f;
+
 }
 
 .medal-gold img {
@@ -897,21 +922,42 @@ iframe#_hjRemoteVarsFrame {
 .ranking .ranking-table-data:nth-child(3) {
   font-size: 0.875em;
   text-align: center;
+  font-weight: 600;
+  color: #333;
+
   width: 25%;
   padding-right: 4%;
 }
 
-@media (min-width: 33em) {
+@media (min-width: 775px) {
   .ranking .ranking-table-data:nth-child(3) {
     padding-right: 0%;
     font-size: 1em;
+    font-weight: 600;
+
+    color: #333;
   }
+  //   .ranking .ranking-table-data:nth-child(3) .complete {
+  //   transform: translateY(33%)!important;
+
+  // }
+}
+@media (max-width: 430px) {
+  .ranking .ranking-table-data:nth-child(3) {
+    padding-right: 0%;
+    font-size: 11px;
+    font-weight: 600;
+    color: #333;
+  }
+  //   .ranking .ranking-table-data:nth-child(3) .complete {
+  //   transform: translateY(6%)!important;
+
+  // }
 }
 
-.ranking .ranking-table-data:nth-child(3) .complete {
-  margin: -1.25em auto;
-  transform: translateY(33%);
+// .ranking .ranking-table-data:nth-child(3) .complete {
+//   margin: -1.25em auto;
+//   transform: translateY(6%);
 
-}
-
+// }
 </style>

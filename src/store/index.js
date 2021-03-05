@@ -7,94 +7,103 @@ export default new Vuex.Store({
   state: {
     ranks: [{
       stt: 1,
-      sdt: '0396895733',
-      phanthuong: 'Iphone X'
+      sdt: '0999998888',
+      phanthuong: 'Range Rover 2021'
     },
     {
       stt: 2,
-      sdt: '0396895733',
-      phanthuong: 'Iphone X'
+      sdt: '0999999999',
+      phanthuong: 'Iphone 12 Pro Max'
     },
     {
       stt: 3,
-      sdt: '0396895733',
+      sdt: '0123456789',
       phanthuong: 'Iphone X'
     },
     {
       stt: 4,
-      sdt: '0396895733',
-      phanthuong: 'Iphone X'
+      sdt: '0696969696',
+      phanthuong: '1.000.000đ'
     },
     {
       stt: 5,
       sdt: '0976895733',
-      phanthuong: 'Iphone X'
+      phanthuong: '1.000.000đ'
     },
     {
       stt: 6,
-      sdt: '0396895733',
-      phanthuong: 'Iphone X'
+      sdt: '0999998888',
+      phanthuong: '1.000.000đ'
+    }, {
+      stt: 7,
+      sdt: '0696969696',
+      phanthuong: '1.000.000đ'
+    },
+    {
+      stt: 8,
+      sdt: '0976895733',
+      phanthuong: '1.000.000đ'
+    },
+    {
+      stt: 9,
+      sdt: '0999998888',
+      phanthuong: '1.000.000đ'
+    },
+    {
+      stt: 10,
+      sdt: '0999998888',
+      phanthuong: '1.000.000đ'
     }
     ],
     BXH: [{
       stt: 1,
       sdt: '0169578469',
-      phanthuong: 'Iphone 12'
+      phanthuong: '1.000.000.000 VND'
     },
     {
       stt: 2,
       sdt: '0215654484',
-      phanthuong: 'Iphone X'
+      phanthuong: 'Iphone Xsm'
     },
     {
       stt: 3,
-      sdt: '0396895733',
+      sdt: '0999998888',
       phanthuong: 'Iphone X'
     },
     {
       stt: 4,
-      sdt: '0396895733',
-      phanthuong: 'Iphone X'
+      sdt: '0999998888',
+      phanthuong: '1.000.000đ'
     },
     {
       stt: 5,
       sdt: '0976895733',
-      phanthuong: 'Iphone X'
+      phanthuong: '1.000.000đ'
     },
     {
       stt: 6,
-      sdt: '0396895733',
-      phanthuong: 'Iphone X'
+      sdt: '0999998888',
+      phanthuong: '1.000.000đ'
     },
     {
       stt: 7,
-      sdt: '0396895733',
-      phanthuong: 'Iphone X'
+      sdt: '0999998888',
+      phanthuong: '1.000.000đ'
     },
     {
       stt: 8,
       sdt: '0976895733',
-      phanthuong: 'Iphone X'
+      phanthuong: '1.000.000đ'
     },
     {
       stt: 9,
-      sdt: '0396895733',
-      phanthuong: 'Iphone X'
+      sdt: '0999998888',
+      phanthuong: '1.000.000đ'
     },
     {
       stt: 10,
-      sdt: '0396895733',
-      phanthuong: 'Iphone X'
-    },
-    {
-      stt: 11,
-      sdt: '0976895733',
-      phanthuong: 'Iphone X'
-    },
-    {
-      stt: 12,
-      sdt: '0396895733',
-      phanthuong: 'Iphone X'
+      sdt: '0999998888',
+      phanthuong: '1.000.000đ'
     }
     ]
   },

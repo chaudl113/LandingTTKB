@@ -61,7 +61,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-              <router-link to="/" class="nav-link menu-main-item-link " href="#"
+              <router-link to="/" class="nav-link menu-main-item-link "
                 >Trang chủ
               </router-link>
             </li>
@@ -80,9 +80,9 @@
           </ul>
 
           <div class="mx-auto">
-            <a href="#" class="navbar-brand"
+            <router-link tag="a"  to="/"  class="navbar-brand"
               ><img class="logo-image" src="../../assets/logo_login.png" alt=""
-            /></a>
+            /></router-link>
           </div>
 
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">

@@ -2,14 +2,13 @@
   <footer>
     <div class="inner-page">
       <p class="address">
-        CÔNG TY CỔ PHẦN GIẢI TRÍ VIỆT NAM<br />
-        Giấy CNĐKKD số 0105301438, cấp lần đầu ngày 10/05/2011<br />
+        CÔNG TY CỔ PHẦN VIP PRO VIỆT NAM<br />
+        Giấy CNĐKKD số 088889999, cấp lần đầu ngày 00/00/0000<br />
         Cơ quan cấp: Phòng Đăng ký kinh doanh- Sở Kế hoạch và đầu tư TP Hà
         Nội<br />
-        Địa chỉ trụ sở chính: Tầng 29, tòa nhà Trung tâm Lotte Hà Nội, số 54,
-        đường Liễu Giai, Phường Cống Vị, Quận Ba Đình,<br />
+        Địa chỉ trụ sở chính: Tầng 1999, tòa nhà Trung tâm  Hà Nội<br />
         Thành phố Hà Nội, Việt Nam.<br />
-        Điện thoại: 024 73053939
+        Điện thoại: 024 8888888
       </p>
     </div>
 
@@ -30,7 +29,6 @@ export default {}
 footer {
   text-align: center;
   color: #fff;
-  margin-top: 50px;
     background: url("../../assets/line.png") top center no-repeat;
   background-size: 100% auto;
   padding: 50px 0 50px 0;
