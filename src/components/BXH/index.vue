@@ -42,9 +42,9 @@
                   <div class="ranking-table">
                     <div class="ranking-table-header-row">
                       <div class="ranking-table-header-data h6">Rank</div>
-                      <div class="ranking-table-header-data h6">Thuê bao</div>
+                      <div class="ranking-table-header-data h6">Tài khoản</div>
                       <div class="ranking-table-header-data h6">
-                        Phần thuởng
+                        Tổng điểm
                       </div>
                     </div>
                     <div
@@ -64,10 +64,10 @@
                         <span class="medal-gold" v-else >{{BXH.stt }}</span>
                       </div>
                       <div class="ranking-table-data">
-                        {{ BXH.sdt }}
+                        {{ BXH.name }}
                       </div>
                       <div class="ranking-table-data">
-                        <div class="complete">{{ BXH.phanthuong }}</div>
+                        <div class="complete">{{ BXH.totalScore }}</div>
                       </div>
                     </div>
 <!--

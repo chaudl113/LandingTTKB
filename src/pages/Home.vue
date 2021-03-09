@@ -3,9 +3,8 @@
     <Rank />
     <Instruction />
     <Description />
-    <Minigame/>
+    <Minigame />
     <BXH />
-
   </div>
 </template>
 
@@ -20,6 +19,9 @@ export default {
   name: 'Home',
   beforeCreate () {
     document.title = this.$route.meta.title
+  },
+  created () {
+    this.$store.dispatch('fetchPosts')
   },
   components: {
     Rank,

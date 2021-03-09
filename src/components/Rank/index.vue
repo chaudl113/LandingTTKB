@@ -44,7 +44,7 @@
                       <div class="ranking-table-header-data h6">Rank</div>
                       <div class="ranking-table-header-data h6">Thuê bao</div>
                       <div class="ranking-table-header-data h6">
-                        Phần thuởng
+                        Tổng điểm
                       </div>
                     </div>
                     <div
@@ -64,10 +64,10 @@
                         <span class="medal-gold" v-else >{{rank.stt }}</span>
                       </div>
                       <div class="ranking-table-data">
-                        {{ rank.sdt }}
+                        0{{ rank.msisdn }}
                       </div>
                       <div class="ranking-table-data">
-                        <div class="complete">{{ rank.phanthuong }}</div>
+                        <div class="complete">{{ rank.totalScore }}</div>
                       </div>
                     </div>
 <!--
