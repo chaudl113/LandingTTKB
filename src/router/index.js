@@ -13,7 +13,7 @@ const router = new Router({
   routes: [{
     path: '/',
     component: Home,
-    meta: { title: 'Trang chủ || Truy tìm khoa báu' }
+    meta: { title: 'Trang chủ || Truy tìm kho báu' }
   },
 
   {
