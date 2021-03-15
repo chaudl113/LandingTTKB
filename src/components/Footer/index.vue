@@ -2,13 +2,12 @@
   <footer>
     <div class="inner-page">
       <p class="address">
-        CÔNG TY CỔ PHẦN VIP PRO VIỆT NAM<br />
-        Giấy CNĐKKD số 088889999, cấp lần đầu ngày 00/00/0000<br />
+        CÔNG TY CỔ PHẦN CÔNG NGHỆ NEWWIND VIỆT NAM<br />
         Cơ quan cấp: Phòng Đăng ký kinh doanh- Sở Kế hoạch và đầu tư TP Hà
         Nội<br />
-        Địa chỉ trụ sở chính: Tầng 1999, tòa nhà Trung tâm  Hà Nội<br />
-        Thành phố Hà Nội, Việt Nam.<br />
-        Điện thoại: 024 8888888
+        Mã Số Thuế: 0106140617<br />
+        Địa chỉ trụ sở chính: Số nhà 21, ngõ 99/4 đường Nguyễn Chí Thanh, Phường Láng Hạ, Quận Đống Đa, Thành Phố Hà Nội, Việt Namz.<br />
+        Điện thoại: <a href="tel:02462760172">02462760172</a>
       </p>
     </div>
 
