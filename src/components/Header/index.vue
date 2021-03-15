@@ -25,31 +25,39 @@
               </div>
             </router-link>
           </li>
-          <li class="" v-scroll-to="{ el: '#bxhminigame', offset: -150 }">
-            <a href="#">
+<li class="">
+            <router-link to="/wap/minigame" v-scroll-to="{ el: '#minigame', offset: -95 }">
+              <div class="icon">
+                <i class="fa fa-university" aria-hidden="true"></i>
+                <p>Minigame</p>
+              </div>
+            </router-link>
+          </li>
+
+ <li class="" v-scroll-to="{ el: '#bxhminigame', offset: -50 }">
+            <router-link to="/bonus-list">
               <div class="icon">
                 <i class="fa fa-trophy" aria-hidden="true"></i>
-                <p>BXH MINIGAME</p>
+                <p>BXH Minigame</p>
               </div>
-            </a>
+            </router-link>
           </li>
-          <li>
-            <a href="#" v-scroll-to="{ el: '#huongdan', offset: -70 }">
+ <li>
+            <router-link to="/guideline" v-scroll-to="{ el: '#huongdan', offset: -70 }">
               <div class="icon">
                 <i class="fa fa-book" aria-hidden="true"></i>
 
                 <p>Huớng dẫn</p>
               </div>
-            </a>
+            </router-link>
           </li>
-
-          <li class="">
-            <a href="#" v-scroll-to="{ el: '#mota', offset: -60 }">
+           <li class="">
+            <router-link to="/wap/regulation" v-scroll-to="{ el: '#reg', offset: -40 }">
               <div class="icon">
-                <i class="fa fa-university" aria-hidden="true"></i>
-                <p>Mô tả</p>
+               <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                <p>Giới thiệu</p>
               </div>
-            </a>
+            </router-link>
           </li>
         </ul>
       </div>
@@ -59,23 +67,24 @@
     >
       <div class="container">
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
+          <ul class="navbar-nav  mt-2 mt-lg-0">
+            <li class="nav-item active"  v-scroll-to="{ el: '#slider-top', offset: -180 }" >
               <router-link to="/" class="nav-link menu-main-item-link "
                 >Trang chủ
               </router-link>
-            </li>
-            <li
+              </li>
+               <li
               class="nav-item"
-              v-scroll-to="{ el: '#slider-top', offset: -100 }"
+              v-scroll-to="{ el: '#main-index', offset: -180 }"
             >
-              <a class="nav-link menu-main-item-link " href="#">BXH</a>
+              <router-link class="nav-link menu-main-item-link " to="/wap/reward">DS trúng thưởng</router-link>
             </li>
+
             <li
               class="nav-item"
               v-scroll-to="{ el: '#huongdan', offset: -180 }"
             >
-              <a class="nav-link menu-main-item-link " href="#">Hướng dẫn</a>
+              <router-link class="nav-link menu-main-item-link " to="/guideline">Hướng dẫn</router-link>
             </li>
           </ul>
 
@@ -85,25 +94,26 @@
             /></router-link>
           </div>
 
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item" v-scroll-to="{ el: '#mota', offset: -170 }">
-              <a class="nav-link disabled menu-main-item-link " href="#"
-                >Mô tả
-              </a>
-            </li>
+          <ul class="navbar-nav  mt-2 mt-lg-0">
             <li
               class="nav-item "
-              v-scroll-to="{ el: '#minigame', offset: -180 }"
+              v-scroll-to="{ el: '#minigame', offset: -100 }"
             >
-              <a class="nav-link menu-main-item-link " href="#">MINIGAME </a>
+              <router-link class="nav-link menu-main-item-link " to="/wap/minigame">MINIGAME </router-link>
             </li>
             <li
-              class="nav-item "
-              v-scroll-to="{ el: '#bxhminigame', offset: -200 }"
+              class="nav-item "  v-scroll-to="{ el: '#bxhminigame', offset: -180 }"
             >
-              <a class="nav-link menu-main-item-link " href="#"
+            <router-link class="nav-link menu-main-item-link " to="/bonus-list"
                 >BXH MINIGAME
-              </a>
+              </router-link>
+            </li>
+              <li
+              class="nav-item "  v-scroll-to="{ el: '#reg', offset: -180 }"
+            >
+            <router-link class="nav-link menu-main-item-link " to="/wap/regulation"
+                >Giới thiệu dịch vụ
+              </router-link>
             </li>
           </ul>
         </div>
@@ -215,7 +225,7 @@ export default {
   margin-bottom: 2px;
 }
 .menu-m li {
-  width: 25%;
+  width: 20%;
   padding-top: 10px;
   text-align: center;
   float: left;
@@ -235,7 +245,7 @@ export default {
 
 .navbar-brand {
   position: absolute;
-  right: calc(50% - 140px);
+  right: calc(50% - 130px);
   top: -5px;
 }
 .header-brand-text {
@@ -266,7 +276,7 @@ ol {
 }
 
 img.logo-image {
-  width: 300px;
+  width: 250px;
   /* padding-top: 66px; */
 }
 

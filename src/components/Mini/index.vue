@@ -140,7 +140,7 @@ export default {}
     height: auto;
     width: 40%;
     vertical-align: middle;
-    height: auto;
+    max-height: 600px;
     padding-top: 50px;
 }
 

@@ -1,22 +1,22 @@
 <template>
   <div>
     <Slide />
-    <Instruction />
+    <Mini />
   </div>
 </template>
 
 <script>
 import Slide from '../components/Slide/index.vue'
-import Instruction from '../components/Instruction/index.vue'
+import Mini from '../components/Mini/index.vue'
 
 export default {
-  name: 'Home',
+  name: 'Minigame',
   beforeCreate () {
     document.title = this.$route.meta.title
   },
   components: {
     Slide,
-    Instruction
+    Mini
   }
 }
 </script>

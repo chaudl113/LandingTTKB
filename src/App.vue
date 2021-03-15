@@ -27,6 +27,7 @@ body {
     font-size: 16px;
     color: #fff;
   background-color: #160e1e!important;
+  box-sizing: border-box;
 
 }
 

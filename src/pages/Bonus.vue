@@ -1,22 +1,25 @@
 <template>
   <div>
     <Slide />
-    <Instruction />
+    <BXH />
   </div>
 </template>
 
 <script>
+import BXH from '../components/BXH/index.vue'
 import Slide from '../components/Slide/index.vue'
-import Instruction from '../components/Instruction/index.vue'
 
 export default {
-  name: 'Home',
+  name: 'Bonus',
   beforeCreate () {
     document.title = this.$route.meta.title
   },
+  created () {
+    this.$store.dispatch('fetchPosts')
+  },
   components: {
-    Slide,
-    Instruction
+    BXH,
+    Slide
   }
 }
 </script>

@@ -10,7 +10,7 @@ import Slide from '../components/Slide/index.vue'
 import Instruction from '../components/Instruction/index.vue'
 
 export default {
-  name: 'Home',
+  name: 'Guideline',
   beforeCreate () {
     document.title = this.$route.meta.title
   },

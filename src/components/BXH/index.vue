@@ -48,7 +48,7 @@
                       </div>
                     </div>
                     <div
-                      v-for="BXH in BXH"
+                      v-for="BXH in bxhMiniGame"
                       :key="BXH.id"
                       class="ranking-table-row-leader-1"
                     >
@@ -109,20 +109,20 @@ export default {
     }
   },
   computed: {
-    BXH () {
+    bxhMiniGame () {
       if (this.searchBXHQuery) {
-        return this.$store.getters.BXH.filter((item) => {
+        return this.$store.getters.bxhMiniGame.filter((item) => {
           return this.searchBXHQuery.toLowerCase().split(' ').every(v => item.sdt.toLowerCase().includes(v))
         })
       } else {
-        return this.$store.getters.BXH
+        return this.$store.getters.bxhMiniGame
       }
     },
     evenNumbers () {
-      return this.BXH.filter(number => number.stt > 3)
+      return this.bxhMiniGame.filter(number => number.stt > 3)
     },
     BXHTop3 () {
-      return this.BXH.filter(number => number.stt < 4)
+      return this.bxhMiniGame.filter(number => number.stt < 4)
     }
   }
 }
@@ -174,7 +174,7 @@ export default {
   background-size: 100% auto;
   padding: 20px 0 50px 0;
   position: relative;
-  background-color: #162148;
+  // background-color: #162148;
 }
 @media screen and (max-width: 770px) {
   #slider-top {

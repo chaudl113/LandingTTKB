@@ -1,22 +1,22 @@
 <template>
   <div>
     <Slide />
-    <Instruction />
+    <RegulationComponents />
   </div>
 </template>
 
 <script>
 import Slide from '../components/Slide/index.vue'
-import Instruction from '../components/Instruction/index.vue'
+import RegulationComponents from '../components/RegulationComponents/index.vue'
 
 export default {
-  name: 'Home',
+  name: 'Regulation',
   beforeCreate () {
     document.title = this.$route.meta.title
   },
   components: {
     Slide,
-    Instruction
+    RegulationComponents
   }
 }
 </script>

@@ -1,22 +1,25 @@
 <template>
   <div>
     <Slide />
-    <Instruction />
+    <Reward />
   </div>
 </template>
 
 <script>
+import Reward from '../components/Reward/index.vue'
 import Slide from '../components/Slide/index.vue'
-import Instruction from '../components/Instruction/index.vue'
 
 export default {
-  name: 'Home',
+  name: 'RewardPages',
   beforeCreate () {
     document.title = this.$route.meta.title
   },
+  created () {
+    this.$store.dispatch('fetchPosts')
+  },
   components: {
-    Slide,
-    Instruction
+    Reward,
+    Slide
   }
 }
 </script>
